@@ -25,4 +25,5 @@ function moo() {
     var parts = text.value.split(".");
     parts = parts.filter(part => part.trim() !== "");
     text.value = parts.join("-Moo.") + "-Moo";
+    text.value = text.value.toUpperCase();
 }
